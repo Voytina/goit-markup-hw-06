@@ -315,7 +315,7 @@ ol {
 
 .section-ourteam {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .main-title-ourteam {
@@ -334,7 +334,9 @@ ol {
 
 .container-list-ourteam {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
 
 
 }
@@ -957,6 +959,21 @@ ol {
     .benefits{
         text-align: start;
     }
+
+
+
+
+
+
+
+    .container-list-ourteam{
+        gap: 64px 24px;
+    }
+
+    .list-ourteam{
+        width: ((100% - 24px) / 2);
+    }
+
     
 }
 
@@ -998,6 +1015,21 @@ ol {
 
     .box-icon{
         display: flex;
+    }
+
+
+
+
+
+
+
+    .section-ourteam{
+        padding: 120px 0;
+    }
+
+    
+    .list-ourteam {
+        width: ((100% - 72px) / 4);
     }
 
 
