@@ -58,9 +58,11 @@ ol {
 }
 
 .container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu {
@@ -238,7 +240,7 @@ ol {
 
 
 .section-benefits {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 
@@ -260,11 +262,12 @@ ol {
 
 .container-list-benefits {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .list-item-benefits {
-    width: calc((100% - 72px) / 4);
+    
 
 }
 
@@ -276,27 +279,31 @@ ol {
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);  
     margin-bottom: 8px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    display: none;
 }
 
 .icon-benefits{
-
+    
 }
 
 .benefits {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    text-align: center;
 
     margin-bottom: 8px;
 }
 
 .benefits-text {
+    max-width: 288px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 500;
     color: #434455;
 }
 
@@ -926,3 +933,73 @@ ol {
 }
 
 /********** BACK-DROP*******/
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .section-benefits{
+
+    }
+    .container-list-benefits{
+        gap: 72px 24px;
+    }
+
+    .list-item-benefits{
+        width: calc((100% - 24px) / 2);
+    }
+    .benefits-text{
+        max-width: 356px;
+    }
+
+    .benefits{
+        text-align: start;
+    }
+    
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .section-benefits {
+        padding: 120px 0;
+    }
+    
+    .container-list-benefits {
+        gap: 24px;
+    }
+    
+    .list-item-benefits {
+        width: calc((100% - 72px) / 4);
+
+    }
+
+    .benefits{
+        font-weight: 500;
+        font-size: 20px;        
+    }
+
+    .benefits-text {
+        max-width: 264px;
+        font-weight: 400;
+    }
+
+    .box-icon{
+        display: flex;
+    }
+
+
+
+}
