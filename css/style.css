@@ -171,7 +171,7 @@ ol {
 
 /********** SECTION-1*******/
 .section {
-    padding: 188px 0;
+    padding: 72px 0;
 }
 
 .section-effective {
@@ -179,24 +179,38 @@ ol {
     margin: 0 auto;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
-    url(../images/background-office.jpg);
+    url(../images/background-office-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
 }
 
+@media(min-device-pixel-ratio: 2),
+(min-reolution: 192dpi),
+(min-resolution: 2dppx){
+    .section-effective{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                url(../images/background-office-mobile-2x.jpg);
+    }
+}
+
 
 .title-effective {
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    margin: 0 auto;
     display: flex;
     text-align: center;
+    margin-bottom: 72px;
+
+    max-width: 288px;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+   
+    
+
 
 
 }
@@ -227,8 +241,7 @@ ol {
     border: none;
     border-radius: 4px;
 
-    margin-top: 48px;
-    margin: 48px auto 0px;
+    margin: 0 auto;
 }
 
 
@@ -974,6 +987,44 @@ ol {
         width: ((100% - 24px) / 2);
     }
 
+
+
+
+
+
+
+
+
+    .section{
+       padding: 112px 0;
+    }
+
+    .section-effective{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), 
+    url(../images/background-office-tablet.png);
+    }
+
+     @media(min-device-pixel-ratio: 2),
+        (min-reolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .section-effective {
+             background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+                    url(../images/background-office-tablet-2x.jpg);
+            }
+        }
+
+    .title-effective{
+        font-size: 56px;
+        font-weight: 700;
+
+        max-width: 496px;
+
+        
+        margin: 0  auto;
+
+        margin-bottom: 36px;
+
+    }
     
 }
 
@@ -1033,5 +1084,25 @@ ol {
     }
 
 
+
+
+
+    .section {
+        padding: 188px 0;
+    }
+    
+    .section-effective {
+        background-image:linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+     url(../images/background-office.jpg);
+        }
+
+    @media(min-device-pixel-ratio: 2),
+    (min-reolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section-effective {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../images/background-office-2x.jpg);
+        }
+        }
 
 }
