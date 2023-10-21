@@ -68,71 +68,76 @@
       </div>
 
       <div class="menu-mobile">
-        <button type="button" class="close-btn-menu">
-          <svg width="8" height="8" class="svg-close">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <nav class="container-mobile-navigation">
-          <ul class="mobile-list-menu">
-            <li class="item-mobile-menu">
-              <a href="" class="navigation-mobile active-mobile">Studio</a>
-            </li>
-            <li class="item-mobile-menu">
-              <a href="" class="navigation-mobile">Portfolio</a>
-            </li>
-            <li class="item-mobile-menu">
-              <a href="" class="navigation-mobile">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <ul class="container-mobile-address">
-            <li class="adress-mobile-list">
-              <a
-                href="tel:+110001111111"
-                class="adress-mobile-style active-mobile"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="adress-mobile-list">
-              <a href="mailto:info@devstudio.com" class="adress-mobile-style"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div>
+          <button type="button" class="close-btn-menu">
+            <svg width="8" height="8" class="svg-close">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
 
-        <ul class="list-header-icon">
-          <li class="footer-icon-item">
-            <a href="" class="icon-footer-style">
-              <svg class="icon-footer" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-icon-item">
-            <a href="" class="icon-footer-style">
-              <svg class="icon-footer" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-icon-item">
-            <a href="" class="icon-footer-style">
-              <svg class="icon-footer" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-icon-item">
-            <a href="" class="icon-footer-style">
-              <svg class="icon-footer" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <nav class="container-mobile-navigation">
+            <ul class="mobile-list-menu">
+              <li class="item-mobile-menu">
+                <a href="" class="navigation-mobile active-mobile">Studio</a>
+              </li>
+              <li class="item-mobile-menu">
+                <a href="" class="navigation-mobile">Portfolio</a>
+              </li>
+              <li class="item-mobile-menu">
+                <a href="" class="navigation-mobile">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <address class="mobile-address-block">
+            <ul class="container-mobile-address">
+              <li class="adress-mobile-list">
+                <a
+                  href="tel:+110001111111"
+                  class="adress-mobile-style active-mobile"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="adress-mobile-list">
+                <a href="mailto:info@devstudio.com" class="adress-mobile-style"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="list-header-icon">
+            <li class="footer-icon-item">
+              <a href="" class="icon-footer-style">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="" class="icon-footer-style">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="" class="icon-footer-style">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="" class="icon-footer-style">
+                <svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -212,11 +217,17 @@
 
           <ul class="container-list-ourteam">
             <li class="list-ourteam">
-              <img
-                src="./images/markk.jpg"
-                alt="A man with a beard in a blue shirt"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="./images/markk.jpg 1x, ./images/markk-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/markk.jpg"
+                  alt="A man with a beard in a blue shirt"
+                  width="264"
+                />
+              </picture>
               <div class="container-worked-name">
                 <h3 class="title-ourteam">Mark Guerrero</h3>
                 <p class="text-ourteam">Product Designer</p>
@@ -254,7 +265,14 @@
               </div>
             </li>
             <li class="list-ourteam">
-              <img src="./images/tom.jpg" alt="Happy young man" width="264" />
+              <picture>
+                <source
+                  srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img src="./images/tom.jpg" alt="Happy young man" width="264" />
+              </picture>
               <div class="container-worked-name">
                 <h3 class="title-ourteam">Tom Ford</h3>
                 <p class="text-ourteam">Frontend Developer</p>
@@ -292,7 +310,18 @@
               </div>
             </li>
             <li class="list-ourteam">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <picture>
+                <source
+                  srcset="./images/camila.jpg 1x, ./images/camila-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/camila.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
               <div class="container-worked-name">
                 <h3 class="title-ourteam">Camila Garcia</h3>
                 <p class="text-ourteam">Marketing</p>
@@ -330,7 +359,19 @@
               </div>
             </li>
             <li class="list-ourteam">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <picture>
+                <source
+                  srcset="../images/daniel.jpg 1x, ./images/daniel-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  src="./images/daniel.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+              </picture>
+
               <div class="container-worked-name">
                 <h3 class="title-ourteam">Daniel Wilson</h3>
                 <p class="text-ourteam">UI Designer</p>

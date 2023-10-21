@@ -91,7 +91,6 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    margin-right: 76px;
 
 }
 
@@ -194,9 +193,15 @@ ol {
     opacity: 0;
     pointer-events: none;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
-
+.menu-mobile-container{
+    
+}
 
 .close-btn-menu{
     width: 24px;
@@ -219,7 +224,8 @@ ol {
 
 
 .container-mobile-navigation{
-    margin-bottom: 168px;
+    
+    
 }
 
 .mobile-list-menu{
@@ -239,8 +245,13 @@ ol {
     letter-spacing: 0.02em;
 
     color: #2E2F42;
+    
+    
 }
 
+.mobile-address-block{
+    margin-bottom: 48px;
+}   
 
 
 .container-mobile-address{
@@ -248,7 +259,7 @@ ol {
     flex-wrap: wrap;
     gap: 24px;
 
-    margin-bottom: 48px;
+    
 
 }
 .adress-mobile-list{
@@ -1093,7 +1104,7 @@ ol {
         font-size: 12px;
     }
     .logotype-header{
-            margin-right: 120px;
+        margin-right: 120px;
     }
     .active::after{
         bottom: -14px;
