@@ -6,7 +6,7 @@ body{
     font-size:16px;
     background-color:#FFFFFF ;
     font-weight: 400;
-    line-height: 150%;
+
     color:#434455;
 
 }
@@ -144,8 +144,8 @@ ol {
 }
 
 .adress-list {
-    padding-top: 0;
-    padding-bottom: 0;
+    display: block;
+    height: 14px
 }
 
 .adress-list .adress-style:hover,
@@ -1121,7 +1121,7 @@ ol {
         margin-right: 120px;
     }
     .active::after{
-        bottom: -20px;
+        bottom: -10px;
     }
 
 
@@ -1305,10 +1305,15 @@ ol {
 
     }
 
-    
+        
     
         .button-menu-header {
             display: none;
+        }
+
+        .container-list-address{
+            flex-direction: row;
+            gap: 40px;
         }
     
         .container-list-menu {
@@ -1324,7 +1329,11 @@ ol {
         }
     
         .active::after {
-            bottom: -20px;
+            bottom: -2px;
+        }
+
+        .adress-list{
+            height: 24px;
         }
 
 
